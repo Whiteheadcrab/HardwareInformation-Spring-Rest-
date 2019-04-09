@@ -22,6 +22,12 @@ public class SystemData {
                  "Total memory in bytes : " + Runtime.getRuntime().totalMemory() + "<br>"
                 );
 
+        //Add data software information
+        Info += ("<br>Software parts :" + "<br><br>" +
+                 "Name of your OS : " + System.getProperty("os.name") + "<br>" +
+                 "Version of your OS : " + System.getProperty("os.version") + "<br>" +
+                 "Architecture of your OS :" + System.getProperty("os.arch"));
+
         return Info;
     }
 }
